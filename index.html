@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Storybook Gallery</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <button class="theme-toggle" onclick="toggleTheme()">🌙</button>
+
+    <!-- Landing Page -->
+    <div class="landing-page" id="landingPage">
+        <div class="landing-container">
+            <span class="decorative-stars star1">✨</span>
+            <span class="decorative-stars star2">⭐</span>
+            <span class="decorative-stars star3">✨</span>
+            <span class="decorative-stars star4">⭐</span>
+            
+            <h1>Welcome to My Storybook Gallery</h1>
+            <p class="landing-subtitle">“Where every stories finds a home 🏡”<br>
+                ~ Kalpana Mahto
+
+            </p>
+            
+            <!-- <div class="landing-features">
+                <div class="feature-item">
+                    <div class="feature-icon">📖</div>
+                    <div class="feature-text">6 Books</div>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">✍️</div>
+                    <div class="feature-text">Unique Stories</div>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">🎨</div>
+                    <div class="feature-text">Beautiful Art</div>
+                </div>
+            </div> -->
+            
+            <button class="enter-btn" onclick="enterGallery()">Enter Gallery ➜</button>
+        </div>
+    </div>
+
+    <!-- Gallery Page -->
+    <div class="gallery-page" id="galleryPage">
+        <div class="gallery-header">
+            <h1>My Storybooks</h1>
+            <button class="back-btn" onclick="backToLanding()">← Back to Landing</button>
+        </div>
+        <div class="books-container" id="booksContainer"></div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal" id="modal">
+        <div class="modal-content" id="modalContent">
+            <span class="close-modal" onclick="closeModal()">&times;</span>
+            <div id="modalBody"></div>
+        </div>
+    </div>
+    
+    <footer class="gallery-footer">
+        <div class="footer-content">
+            <div class="footer-quote">
+                <p>"Words are the wings of the soul"</p>
+            </div>
+             <div class="footer-links">
+                <a href="https://www.instagram.com/_.kalpanamahto._" class="footer-link"><i class="fab fa-instagram"></i> Instagram</a>
+                <a href="https://www.youtube.com/@kalpanamahto13" class="footer-link"><i class="fab fa-youtube"></i> Youtube</a>
+            </div>
+            <div class="footer-copyright">
+                <p>&copy; 2025 Kalpana Mahto. All rights reserved.</p>
+            </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="script.js"></script>
+  
+</body>
+</html>
